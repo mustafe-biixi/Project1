@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Testing</title>
+</head>
+<body>
+    <form>
+        <select id='transferType'>
+            <option value="1">Transaction id</option>
+            <option value="2">Transfer id</option>
+            </select>
+        </select>
+        <input type="text" id='trans'/>
+    </form>
+
+    <script>
+        var trans = document.getElementById('trans');
+        trans.style.visibility='hidden';
+        $('#transferType').change(function(event) {
+            trans.style.visibility='visible';
+
+        });
+    
+
+    </script>
+</body>
+</html>
